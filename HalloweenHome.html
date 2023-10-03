@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>
+    Happy Halloween
+</title>
+<link rel = "stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Frijole' rel='stylesheet'>
+</head>
+
+<body>
+    <div style="display:flex ; justify-content:center; flex-direction:column">
+
+    <section class="section1">
+        <h2>HAPPY<br>HALLOWEEN </h2>
+        <img src="witch2.png" class="witch1">
+    </section>
+
+    <section class = "section2" style="display: flex; flex-direction:row">
+        <div style="margin-right: 10px;">
+    <p> <b>All you scaredy cats, it is time to fear,<br><br>
+        For all the evil spirits and witches are now near,<br><br>
+        You can run but you cannot hide, my dear. <br><br>
+        For Halloween time is finally here...</b></p>
+        </div>
+        <div><img src = "icon2.gif" class="icon1"></div>
+    </section>
+
+    <div style="display: flex; justify-content:center; background-color: rgb(254, 147, 17);"> 
+        <figure>
+    
+            <b class="textsgravedigger" style="padding-left: 0px;">Click for spooky jingle:</b> 
+    
+            <audio id="jingle" hidden src="2020-10-26_-_Ghost_Stories_-_www.FesliyanStudios.com_Steve_Oxen.mp3" type="audio/mpeg">
+            </audio>
+            
+            <input type="image" src="https://cdn-icons-png.flaticon.com/512/3538/3538416.png" height="100" width="100" id="playAudio"/>
+            
+            <script type="text/javascript">
+            document.getElementById("playAudio").addEventListener("click", function(){
+                var audio = document.getElementById('jingle');
+              if(this.className == 'is-playing'){
+                this.className = "";
+                audio.pause();
+              }else{
+                this.className = "is-playing";
+                audio.play();
+              }
+            
+            });
+            </script>
+    
+        </figure>
+        </div>
+        <div class= "borders texts frijole"  style="background-color:black ;">
+            <figure>
+                <figcaption>PARTY INVITATION:</figcaption><br>
+                <form action="invitation.html">
+                    <button style = "background-color: rgb(254, 147, 17);
+                    color: rgb(0, 0, 0); height: 1.5cm; width: 5cm; font-size: 20px; border: 2px solid white; border-radius:45%;" ; 
+                     type="submit"><b>CLICK HERE :)</b></button>
+                </form>
+            </figure>
+            <figure>
+                <figcaption>Listen to some Halloween tunes:</figcaption><br>
+                <embed src="https://www.youtube.com/embed/2Z25_h1LBtQ" height="300" width="520"></embed>
+            </figure>
+        </div>
+    
+    
+        <script>
+    
+        </script>
+    
+    
+        
+
+
+    </div>
+
+
+</body>
+
+
+</html>
